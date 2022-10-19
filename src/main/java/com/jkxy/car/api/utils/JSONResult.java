@@ -18,6 +18,7 @@ public class JSONResult {
     private String msg;
 
     // 响应中的数据
+
     private Object data;
 
 

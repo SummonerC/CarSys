@@ -96,7 +96,7 @@ public class CarController {
         Car carBefore = carService.findById(id);
         int inventory = carBefore.getCarNum();
         if (inventory-carNum<0) {
-            return JSONResult.ok("库存不足！！！当前库存为: " + inventory + " 辆，您购买的数量为: " + carNum + " 辆。");
+            return JSONResult.ok("库存不足！当前库存为: " + inventory + " 辆，您购买的数量为: " + carNum + " 辆。");
         }
         carService.buyCar(id,carNum);
         Car carAfter = carService.findById(id);
